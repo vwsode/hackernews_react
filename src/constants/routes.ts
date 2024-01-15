@@ -1,5 +1,6 @@
 export enum ROUTES {
     MAIN = '/',
+    NEW = '/newest',
     NEWS = '/news',
     POST = '/news/:id',
     PAST = '/past',

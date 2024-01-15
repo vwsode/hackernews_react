@@ -1,15 +1,13 @@
 import { RouterProvider } from 'react-router-dom';
 
-import Layout from '@/components/Layout/Layout';
+import { router } from '@/config/router';
 
-import { routes } from '@/config/router';
+import '@assets/styles/index.scss';
 
 const App = () => {
     return (
         <>
-            <Layout>
-                <RouterProvider router={routes}></RouterProvider>
-            </Layout>
+            <RouterProvider router={router}></RouterProvider>
         </>
     );
 };

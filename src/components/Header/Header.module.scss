@@ -1,0 +1,51 @@
+.header {
+    padding: 20px 0;
+}
+
+.wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.nav {
+    &__item {}
+
+    &__list {
+        list-style: none;
+
+        display: flex;
+        gap: 8px;
+
+    }
+
+    &__link {
+        text-decoration: none;
+        font-size: 16px;
+        color: var(--tag-text-color);
+        padding: 2px 8px;
+        border-radius: 20px;
+        background-color: var(--tag-background-color);
+
+        transition: background 100ms;
+
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                background-color: var(--tag-secondary-color);
+            }
+        }
+
+    }
+}
+
+
+.logo {
+    width: 248px;
+    display: inline-flex;
+    align-items: center;
+    
+    &__text {
+        fill: var(--app-name-text-color);
+    }
+}
