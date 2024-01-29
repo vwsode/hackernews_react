@@ -2,11 +2,16 @@ import React from 'react';
 
 import s from './Post.module.scss';
 
-const Post = () => {
+interface Props {
+    title: string;
+    path: string;
+}
+
+const Post: React.FC<Props> = ({ title, path }) => {
     return (
         <div className={s.post}>
-            <a className={s.post__title} href="">
-                ICO fines HelloFresh £140k for spam texts and emails
+            <a className={s.post__title} href={path}>
+                {title}
             </a>
             <div className={s.post__details}>
                 <div className={s.post__detail}>
@@ -16,7 +21,7 @@ const Post = () => {
                     <svg
                         stroke="currentColor"
                         fill="currentColor"
-                        stroke-width="0"
+                        strokeWidth="0"
                         viewBox="0 0 24 24"
                         height="1em"
                         width="1em"
@@ -33,7 +38,7 @@ const Post = () => {
                     <svg
                         stroke="currentColor"
                         fill="currentColor"
-                        stroke-width="0"
+                        strokeWidth="0"
                         viewBox="0 0 24 24"
                         height="1em"
                         width="1em"

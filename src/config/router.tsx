@@ -1,21 +1,10 @@
 import { Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 
-import Main from '@pages/Main/Main';
-import Ask from '@pages/Ask/Ask';
-import Comments from '@pages/Comments/Comments';
-import Jobs from '@pages/Jobs/Jobs';
-import Login from '@pages/Login/Login';
-import New from '@/pages/New/New';
-import Past from '@pages/Past/Past';
-import Post from '@pages/Post/Post';
-import Register from '@pages/Register/Register';
-import Show from '@pages/Show/Show';
-import Submit from '@pages/Submit/Submit';
-import User from '@pages/User/User';
-
+import { Ask, Comments, Jobs, Login, Main, New, Past, Post, Show, Submit, User } from '@/pages';
 import Layout from '@/components/Layout/Layout';
 
 import { ROUTES } from '@constants/routes';
+import Register from '@/pages/Register/Register';
 
 export const router = createBrowserRouter(
     createRoutesFromElements(
@@ -35,4 +24,3 @@ export const router = createBrowserRouter(
         </Route>,
     ),
 );
-

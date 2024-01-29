@@ -1,0 +1,16 @@
+.input {
+    border-radius: 50px;
+    color: var(--primary-text-color);
+    border: 1px solid var(--card-border-color);
+    box-shadow: 0 0 20px var(--card-border-color);
+    box-sizing: border-box;
+    height: 40px;
+    padding: 0 32px 0 32px;
+    width: 100%;
+    background-color: var(--card-header-background-color);
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    outline: none;
+}
