@@ -1,0 +1,36 @@
+.posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.pagination button {
+    height: 32px;
+    padding: 0 16px;
+    width: auto;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+
+    color: var(--tag-text-color);
+    padding: 2px 8px;
+    background-color: var(--tag-background-color);
+    transition: background 100ms;
+    
+    &:hover {
+        background-color: var(--tag-secondary-color);
+    }
+
+}
